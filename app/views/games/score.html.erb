@@ -1,0 +1,13 @@
+<!-- <h1>Games#score</h1>
+<p>Find me in app/views/games/score.html.erb</p> -->
+
+<h2>RESULTS</h2>
+
+<p>
+<%== @result %> <br>
+Score: <%= @score %> <br>
+Total Score: <%= @session_score.inject(0){|sum,x| sum + x } %>
+</p>
+
+
+<%= link_to "Play again", new_path %>
